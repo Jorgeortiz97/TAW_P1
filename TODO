@@ -1,0 +1,13 @@
+# Tareas por hacer
+
+## Tareas de diseño (HTML + CSS)
+[ ] Diseño básico común para la página web.
+[ ] Diseño de la portada.
+[ ] Diseño de la página de filtrado.
+
+## Tareas de funcionalidad (JavaScript)
+[ ] Funcionalidad de la portada (paginación).
+[ ] Funcionalidad del filtro de contenido.
+
+## Tareas relacionadas con las Browser APIs
+[ ] Inclusión de alguna browser API (client-side storage / cookies).
