@@ -3,7 +3,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	background: #f2f6e9; 
+	background: #f2f6e9;
 }
 
 /*--- navigation bar ---*/
@@ -33,6 +33,7 @@ body {
 /*--- header ---*/
 
 .header {
+	height: 400px;
 	background-image: url('images/header-background.jpg');
 	background-size: cover;
 	background-position: center;
@@ -230,10 +231,13 @@ body {
 	.team {
 		padding: 0 15px;
 	}
-	
 }
 
 @media (max-width: 575.98px) {
+
+	.header {
+		height: 100px;
+	}
 
 	.description {
 		left: 0;
@@ -243,23 +247,23 @@ body {
 		transform: none;
 		text-align: center;
 	}
-	
+
 	.description h1 {
 		font-size: 2em;
 	}
-	
+
 	.description p {
 		font-size: 1.2rem;
 	}
-	
+
 	.features {
 		margin: 0;
 	}
-	
+
 	.team {
 		max-width: 60%;
 	}
-	
+
 	#demo-modal .btn {
 		min-width: auto;
 	}
