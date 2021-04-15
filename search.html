@@ -46,13 +46,55 @@
 				<div class="stars"><div class="twinkling"><div class="clouds"></div></div></div>
 
 				<div class="description">
-					<h1>Latest Space News</h1>
+					<h1>Search Space News</h1>
 				</div>
 		</header>
 
 
 		<!-- Page Data -->
 		<div class="container features">
+
+			<!-- Search Form -->
+			<div class="search-form mx-auto mb-5">
+				<form>
+					<h2 class="text-center mb-3">Search Results</h2>
+					<div class="form-group row">
+						<label for="title" class="col-sm-4 col-md-2 col-form-label">Title</label>
+						<div class="col-sm-8 col-md-10">
+							<input type="text" class="form-control" id="title" placeholder="Type keywords">
+						</div>
+
+						<label for="summary" class="col-sm-4 col-md-2 col-form-label">Summary</label>
+						<div class="col-sm-8 col-md-10">
+							<input type="text" class="form-control" id="summary" placeholder="Type keywords">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="before" class="col-sm-4 col-md-2 col-form-label">Before</label>
+						<div class="col-sm-8 col-md-10">
+							<input type="text" class="form-control datepicker" id="before" placeholder="yyyy-mm-dd">
+						</div>
+
+						<label for="after" class="col-sm-4 col-md-2 col-form-label">After</label>
+						<div class="col-sm-8 col-md-10">
+							<input type="text" class="form-control datepicker" id="after" placeholder="yyyy-mm-dd">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-4 col-md-2">Featured</div>
+						<div class="col-sm-8 col-md-10">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck1">
+								<label class="form-check-label" for="gridCheck1">Enable to show only featured news</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row justify-content-center">
+						<button type="submit" class="btn btn-primary px-5">Search</button>
+					</div>
+				</form>
+			</div>
+
 			<div class="row" id="articles-data">
 				<!-- Article information comes here -->
 			</div>
@@ -94,7 +136,6 @@
 		<script src="jquery/js/jquery-ui-1.12.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
-
 
 		<div id="demo-modal" class="modal fade">
 			<div class="modal-dialog modal-lg modal-dialog-centered">

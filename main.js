@@ -65,6 +65,10 @@ function loadArticles(page) {
 
 window.onload = function() {
 	loadArticles(currentPage);
+
+	$( ".datepicker" ).datepicker({
+		dateFormat: 'yy-mm-dd',
+	});
 };
 
 

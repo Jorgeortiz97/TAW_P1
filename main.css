@@ -37,7 +37,7 @@ body {
 /*--- header ---*/
 
 .header {
-	height: 400px;
+	height: 200px;
 	/*background-image: url('images/header-background.jpg');*/
 	background-size: cover;
 	background-position: center;
@@ -65,29 +65,10 @@ body {
 	color: royalblue;
 }
 
-.description p {
-	color: #fff;
-	font-size: 1.3rem;
-	line-height: 1.5;
-}
-
-.description button {
-	border: 1px solid #6ab446;
-	background: #6ab446;
-	border-radius: 0;
-	color: #fff;
-}
-
-.description button:hover {
-	border: 1px solid #fff;
-	background: #fff;
-	color: #000;
-}
-
 /*--- feature section ---*/
 
 .features {
-	margin: 4em auto;
+	margin: 1em auto;
 	padding: 1em;
 	position: relative;
 }
@@ -97,6 +78,7 @@ body {
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 20px;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -113,8 +95,8 @@ body {
 }
 
 .features .btn {
-	background-color: #589b37;
-	border: 1px solid #589b37;
+	background-color: royalblue;
+	border: 1px solid darkblue;
 	color: #fff;
 	margin-top: 20px;
 }
@@ -122,34 +104,6 @@ body {
 .features .btn:hover {
 	background-color: #333;
 	border: 1px solid #333;
-}
-
-/*--- team section ---*/
-
-.background {
-	padding: 4em 0;
-}
-
-.team {
-	color: #5e5e55;
-	padding: 0 180px;
-}
-
-.team .card-columns {
-	-webkit-column-count: 4;
-	-moz-column-count: 4;
-	column-count: 4;
-}
-
-.team .card {
-	background:none;
-	border: none;
-}
-
-.team .card-title {
-	font-size: 1.3rem;
-	margin-bottom: 0;
-	text-transform: uppercase;
 }
 
 /*--- footer ---*/
@@ -230,6 +184,24 @@ body {
 
 
 
+/*
+ * Search Form
+ */
+
+.search-form {
+    width: 80%;
+  	font-size: 15px;
+}
+.search-form form {
+    margin-bottom: 10px;
+    background: rgb(236, 236, 255);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+
+
+
 
 
 
@@ -285,12 +257,9 @@ body {
 
 /*--- media queries ---*/
 
-@media (max-width: 991.98px) {
+/*@media (max-width: 991.98px) {
 
-	.team {
-		padding: 0 15px;
-	}
-}
+}*/
 
 @media (max-width: 575.98px) {
 
@@ -301,7 +270,7 @@ body {
 	.description {
 		left: 0;
 		padding: 0 15px;
-		position: absolute;
+		position: relative;
 		top: 10%;
 		transform: none;
 		text-align: center;
@@ -311,16 +280,8 @@ body {
 		font-size: 2em;
 	}
 
-	.description p {
-		font-size: 1.2rem;
-	}
-
 	.features {
-		margin: 0;
-	}
-
-	.team {
-		max-width: 60%;
+		margin: 0 auto;
 	}
 
 	#demo-modal .btn {
