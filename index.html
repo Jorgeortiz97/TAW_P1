@@ -6,9 +6,10 @@
 		<title>Space News Portal</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="jquery/css/jquery-ui-1.12.1.min.css">
-		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link rel="stylesheet" href="jquery-ui/css/jquery-ui-1.12.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 	</head>
 
@@ -27,13 +28,10 @@
 			<div class="collapse navbar-collapse" id="main-navigation">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="./">Home</a>
+						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="search.html">Search</a>
 					</li>
 				</ul>
 			</div>
@@ -53,16 +51,14 @@
 
 		<!-- Page Data -->
 		<div class="container features">
+			<!-- Articles Data -->
 			<div class="row" id="articles-data">
 				<!-- Article information comes here -->
 			</div>
 
-			<div class="d-flex justify-content-center">
-				<nav aria-label="...">
-					<ul class="pagination" id="pagination-data">
-						<!-- Pagination list comes here -->
-					</ul>
-				</nav>
+			<!-- Pagination -->
+			<div id="pagination-data">
+				<!-- Pagination list comes here -->
 			</div>
 		</div>
 
@@ -90,33 +86,10 @@
 
 
 		<!-- Scripts -->
-		<script src="jquery/js/jquery-3.5.1.min.js"></script>
-		<script src="jquery/js/jquery-ui-1.12.1.min.js"></script>
+		<script src="bootstrap/jquery-3.5.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="main.js"></script>
-
-
-		<div id="demo-modal" class="modal fade">
-			<div class="modal-dialog modal-lg modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<img class="rounded-circle mx-auto" src="images/email-icon.png" alt="modal image">
-						<button type="button" class="close" data-dismiss="modal" aria-label="close">
-							<span>x</span>
-						</button>
-					</div>
-					<div class="modal-body text-center">
-						<h4>Subscribe to our newsletter</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu.</p>
-						<div class="input-group">
-							<input type="email" class="form-control" placeholder="Enter your email address" name="email">
-							<div class="input-group-append">
-								<input type="submit" class="btn" value="Subscribe">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<script src="jquery-ui/js/jquery-ui-1.12.1.min.js"></script>
+		<script src="js/load-articles.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>

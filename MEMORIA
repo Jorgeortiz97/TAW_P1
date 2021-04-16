@@ -1,0 +1,12 @@
+
+
+Algunas notas para la posterior documentación (memoria).
+
+ - ¿Por qué la paginación no permite más de una página?
+
+La API no implementa los campos "nextPageToken" ni "prevPageToken".
+Que permiten determinar si quedan o no más resultados con los mismos
+criterios de búsqueda.
+
+Para conseguir un efecto parecido, hemos solicitado un recurso adicional.
+Si este recurso existe (se permite acceder a la siguiente página).

@@ -8,7 +8,7 @@
 
 ## Tareas de funcionalidad (JavaScript)
 [X] Funcionalidad de la portada (paginación).
-[ ] Funcionalidad del filtro de contenido.
+[X] Funcionalidad del filtro de contenido.
 
 ## Tareas relacionadas con las Browser APIs
 [ ] Inclusión de alguna browser API (client-side storage / cookies).
