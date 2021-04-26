@@ -127,8 +127,9 @@ body {
 
 .search-form {
     width: 80%;
-  	font-size: 15px;
+    font-size: 15px;
 }
+
 .search-form form {
     margin-bottom: 10px;
     background: rgb(236, 236, 255);
